@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fafafa;
+
+}
+.container-instagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    margin-right: 75px;
+}
+
+.phone-instagram {
+    display: flex;
+    width: 400px;
+    height: 95vh;
+    justify-content: end;
+    align-items: center;
+}
+
+.phone-instagram img {
+    width: 75%;
+    height: 110%;
+    object-fit: cover;
+    float: right;
+}
+
+.login-instagram {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.login-box {
+    border: 1px solid rgb(224, 224, 224);
+    width: 350px;
+    height: 353px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.login-box button {
+    background-color: #0095f6;
+    border: none;
+    color: white;
+    width: 240px;
+    height: 30px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.login-box button:active {
+    background-color: #32a6f3;
+}
+
+.login-box img:nth-child(even) {
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.login-box img:nth-child(odd) {
+    width: 50%;
+    height: 15%;
+}
+
+.login-box span {
+    font-size: 15px;
+    font-weight: lighter;
+}
+.login-box span a {
+    text-decoration: none;
+    color: #0095f6;
+}
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    padding-top: 15px;
+}
+footer ol {
+    display: flex;
+    justify-content: center;
+    padding: 0vh 11vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+}
+footer ol li {
+    padding: 3px 8px;
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+@media(min-width: 1041px) {
+    .login-instagram {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 1040px) {
+    .phone-instagram img {
+        width: 65%;
+        height: 90%;
+    }
+}
+
+@media(max-width: 875px) {
+    .container-instagram {
+        margin-right: 0;
+    }
+    .login-instagram {
+        width: 50%;
+    }
+    .phone-instagram {
+       display: none;
+    }
+}
+
+@media(max-width: 450px) {
+    .login-box {
+        border: none;
+        background-color: transparent;
+    }
+    .login-instagram {
+        margin: 0;
+    }
+}
