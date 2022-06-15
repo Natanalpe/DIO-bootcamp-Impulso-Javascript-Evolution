@@ -27,7 +27,7 @@ body {
 }
 
 .phone-instagram img {
-    width: 75%;
+    width: 100%;
     height: 110%;
     object-fit: cover;
     float: right;
