@@ -5,8 +5,8 @@ function Comparacao(n1, n2) {
     var comparacao20
 
     n1 == n2 ? 
-    iguais += 'são iguais' :
-    iguais += 'não são iguais';
+        iguais += 'são iguais' :
+        iguais += 'não são iguais';
 
     soma > 10 ? comparacao10 = "maior" : comparacao10 = "menor"
     soma > 20 ? comparacao20 = "maior" : comparacao20 = "menor"
