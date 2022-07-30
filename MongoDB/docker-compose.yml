@@ -1,0 +1,13 @@
+version: '3.8'
+secrets:
+  services:
+    my_database:
+      image: mongo
+      restart: always
+      environment:
+        - MONGO_INITDB_ROOT_USERNAME=dio
+        - MONGO_INITDB_ROOT_PASSWORD=dio
+      ports:
+        - "27107:27107"
+      volumes:
+        - /Users/natan/Documents/GitHub/DIO-bootcamp-Impulso-Javascript-Evolution/MongoDB:/data/db
