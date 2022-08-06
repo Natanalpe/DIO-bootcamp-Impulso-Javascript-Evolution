@@ -6,6 +6,10 @@ export class UserController {
     const { name, email } = request.body
 
     if(name.length < 1 || email.length < 1) {
+      return response.status(400)
+    }
+
+    if(name.length < 1 || email.length < 1) {
       return response.status(400).json({})
     }
 
